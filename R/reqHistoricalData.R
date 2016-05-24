@@ -151,6 +151,7 @@ function(conn, Contract,endDateTime,
     # if file is specified - dump to file instead
     if(!missing(file)) {
       cm[,1] <- dts
+      cm <- cm[,-8]
       write.table(cm,
                   file=file,
                   quote=FALSE,
