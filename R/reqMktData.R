@@ -142,7 +142,6 @@ reqMktData <- function (conn, Contract, tickGenerics = "100,101,104,106,165,221,
             writeBin(signals, con)
 #cat('BBBBB','\n')                            
             if (snapshot == "1") {
-				stop("Snapshot not working ? so not supported") #soren
                 eventWrapper <- eWrapper.snapshot()
                 while (1) {
                   socketSelect(list(con), FALSE, NULL)
