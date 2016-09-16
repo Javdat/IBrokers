@@ -73,7 +73,6 @@ eWrapper <- function(debug = FALSE, errfile=stderr())
         }
         openOrder <- function(curMsg, msg, timestamp, file, ...) {
 			e_open_order(curMsg, msg)
-            c(curMsg, msg)
         }
         openOrderEnd <- function(curMsg, msg, timestamp, file,
             ...) {
